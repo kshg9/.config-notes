@@ -23,3 +23,4 @@ Sandboxie
 Sumatra PDF
 Android Studio
 Docker
+WizTree (https://diskanalyzer.com/download)
