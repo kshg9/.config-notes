@@ -1,24 +1,18 @@
-# ⚙️ .config
+# ⚙️ fedora notes.
 
-My personal incremental dotfiles. [minimal]
+Minimal Notes & sources to get by setting up.
 
-> [!NOTE]  
-> This repo is organized **branch-wise**:
-
-- `windows`: Configs & tools used on Windows setups
-- `nixos`: NixOS and Home Manager configuration
-- `main`: Scratchpad or minimal base
-
-## 🧱 Structure
-
-Each branch holds a focused environment:
-- 🪟 **`windows`**
-- 🐧 **`nixos`**
-- 📄 **`main`**: Minimal setup, staging ground for future configs
-
-## 🔧 Usage
+setup on lenovo ideapad gaming 3
+setup `tlp` `tlp-rdw` `lm_sensors`
+setup nvidia drivers from rpmfusion
 
 ```bash
-git clone -b nixos https://github.com/kshg9/.config whatever
-# Or switch to desired branch after cloning
+# cat /etc/default/grub
+GRUB_CMDLINE_LINUX="rhgb quiet rd.driver.blacklist=nouveau,nova_core modprobe.blacklist=nouveau,nova_core nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+```
+
+setup the grub commandline and vmlinuz image
+```bash
+sudo dracut -f
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
