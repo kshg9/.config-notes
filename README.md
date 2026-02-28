@@ -23,3 +23,14 @@ setup the grub commandline and vmlinuz image
 sudo dracut -f
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
+setup `mpv` and `ffmpeg` after setting up rpmfusion's repo.
+
+Otherwise:
+The `--allowerasing` flag is exactly what you need here — it will replace `ffmpeg-free` with RPM Fusion's full `ffmpeg`:
+
+```bash
+sudo dnf install ffmpeg --allowerasing
+```
+
+This will remove the Fedora-provided `ffmpeg-free` package and replace it with RPM Fusion's version, which includes all the proprietary codecs (libx264, libx265, AAC, etc.).
+Has much better speed!
