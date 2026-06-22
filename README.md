@@ -34,3 +34,8 @@ sudo dnf install ffmpeg --allowerasing
 
 This will remove the Fedora-provided `ffmpeg-free` package and replace it with RPM Fusion's version, which includes all the proprietary codecs (libx264, libx265, AAC, etc.).
 Has much better speed!
+
+Printer-configs
+```bash
+https://github.com/ValdikSS/captdriver
+```
