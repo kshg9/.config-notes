@@ -39,3 +39,11 @@ Printer-configs
 ```bash
 https://github.com/ValdikSS/captdriver
 ```
+
+Gnome tiling window manager extra setting. "Pop-Shell"
+```bash
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']"
+```
