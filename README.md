@@ -47,3 +47,26 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']"
 ```
+determinate-nix setup.
+
+application list:
+starship
+ghidra
+mise {java, node, etc}
+
+imhex
+radare2
+ghidra
+
+jetbrains-toolbox {androidstudio etc setup)
+discord+vencord
+
+vicinae
+helium (browser)
+kitty
+sioyek
+telegram
+kitty
+zed
+obsidian
+zeal {c++ plugin}
